@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const form = document.getElementById("form");
+
+        function calculate() {
+
+            // var outstanding = document.getElementById('outstanding').value;
+            // var outstanding = +outstanding;
+            // var amount = document.getElementById("amount").value;
+            // var amount = +amount;
+            // var balance = document.getElementById("balane");
+            // var balance = amount * outstanding;
+            //  document.getElementById('balance').value = balance;
+
+            // balance.innerText = `${balance}`;
+            // console.log(balance);
+
+            var outstanding = document.form.outstanding.value;
+            var outstanding = +outstanding;
+            var amount = document.form.amount.value;
+            var amount = +amount;
+            var balance = document.getElementById("balane");
+            var balance = amount * outstanding;
+            document.getElementById('balance').value = balance;
+            console.log('object :>> ', balance);
+        }
+
+        //   form.onsubmit = calculate();
+    </script>
+</head>
+
+<body>
+    <form action="" method="post" id="form" name="form">
+        <input type="number" id="outstanding" name="outstanding" value=""> <br>
+        <input type="number" id="amount" name="amount" value=""> <br>
+        <input type="button" id="cal" name="cal" value="calculate" onclick="calculate()"> <br>
+        <input type="number" id="balance" name="balance" value="">
+        <!-- <p id="balance"></p> -->
+    </form>
+</body>
+
+</html>
